@@ -9,7 +9,6 @@ public class InOrder {
 
 		while (true) {
 			int randomNumber = (int) (Math.random() * 10);
-
 			if (randomNumber > c) {
 				System.out.print(randomNumber + " ");
 				c = randomNumber;
