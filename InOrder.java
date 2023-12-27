@@ -9,7 +9,7 @@ public class InOrder {
 		String result = "";
 		while (true) {
 			int randomNumber = (int) (Math.random() * 10);
-			if (randomNumber > c) {
+			if (randomNumber > c || (randomNumber == 0 && c == 0)) {
 				result = result + randomNumber;
 				c = randomNumber;
 
