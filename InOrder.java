@@ -6,11 +6,11 @@
 public class InOrder {
 	public static void main(String[] args) {
 		int c = 0;
-
+		String result = "";
 		while (true) {
 			int randomNumber = (int) (Math.random() * 10);
 			if (randomNumber > c) {
-				System.out.print(randomNumber + " ");
+				result = result + randomNumber + " ";
 				c = randomNumber;
 
 			} else {
@@ -18,5 +18,6 @@ public class InOrder {
 			}
 
 		}
+		System.out.println(result);
 	}
 }
