@@ -14,7 +14,7 @@ public class InOrder {
 				c = randomNumber;
 
 			} else if ((randomNumber > c) && (c != 0)) {
-				result = result + " " + randomNumber;
+				result = result + randomNumber;
 				c = randomNumber;
 			} else {
 				break;
