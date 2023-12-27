@@ -9,14 +9,11 @@ public class InOrder {
 		String result = "";
 		while (true) {
 			int randomNumber = (int) (Math.random() * 10);
-			if ((randomNumber > c) && (c == 0)) {
+			if (randomNumber > c) {
 				result = result + randomNumber;
 				c = randomNumber;
 
-			} else if ((randomNumber > c) && (c != 0)) {
-				result = result + randomNumber;
-				c = randomNumber;
-			} else {
+			} else if (randomNumber <= c) {
 				break;
 			}
 
